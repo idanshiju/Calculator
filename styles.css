@@ -1,0 +1,104 @@
+/* === General Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === Calculator Container === */
+.container {
+  background: #222;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 320px;
+}
+
+/* === Display === */
+.display input {
+  width: 100%;
+  height: 60px;
+  font-size: 1.8rem;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #111;
+  color: #fff;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+/* === Buttons Grid === */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* === Buttons Styling === */
+button {
+  padding: 18px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #444;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* === Special Buttons === */
+.btn.operator {
+  background: #ff9500;
+  color: #fff;
+}
+
+.btn.operator:hover {
+  background: #e08a00;
+}
+
+.btn.equals {
+  background: #34c759;
+  color: #fff;
+  grid-column: span 1;
+}
+
+.btn.equals:hover {
+  background: #28a745;
+}
+
+.btn.clear, .btn.clear-entry, .btn.backspace {
+  background: #ff3b30;
+}
+
+.btn.clear:hover,
+.btn.clear-entry:hover,
+.btn.backspace:hover {
+  background: #d32f2f;
+}
+
+.btn.answer {
+  background: #007aff;
+}
+
+.btn.answer:hover {
+  background: #005bb5;
+}

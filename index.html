@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <div class="display">
+        <input type="text" id="textbox" readonly />
+      </div>
+
+      <div class="buttons">
+        <button class="btn answer" aria-label="Answer">Ans</button>
+        <button class="btn clear-entry" aria-label="Clear Entry">CE</button>
+        <button class="btn clear" aria-label="Clear display">C</button>
+        <button class="btn backspace" aria-label="Backspace">
+          <i class="material-icons">backspace</i>
+        </button>
+
+        <button class="btn open-bracket" data-value="(">(</button>
+        <button class="btn close-bracket" data-value=")">)</button>
+        <button class="btn operator" data-value="**" aria-label="Power">^</button>
+        <button class="btn operator" data-value="/" aria-label="Divide">÷</button>
+
+        <button class="btn number" data-value="7">7</button>
+        <button class="btn number" data-value="8">8</button>
+        <button class="btn number" data-value="9">9</button>
+        <button class="btn operator" data-value="*" aria-label="Multiply">×</button>
+
+        <button class="btn number" data-value="4">4</button>
+        <button class="btn number" data-value="5">5</button>
+        <button class="btn number" data-value="6">6</button>
+        <button class="btn operator" data-value="-" aria-label="Subtract">-</button>
+
+        <button class="btn number" data-value="1">1</button>
+        <button class="btn number" data-value="2">2</button>
+        <button class="btn number" data-value="3">3</button>
+        <button class="btn operator" data-value="+" aria-label="Add">+</button>
+
+        <button class="btn sign" aria-label="Toggle Sign">+/-</button>
+        <button class="btn number" data-value="0">0</button>
+        <button class="btn decimal" data-value="." aria-label="Decimal point">.</button>
+        <button class="btn equals" aria-label="Calculate result">=</button>
+      </div>
+    </main>
+
+    <script src="calc.js" defer></script>
+  </body>
+</html>
